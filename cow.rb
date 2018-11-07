@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'ruby_cowsay'
 
 args = ARGV

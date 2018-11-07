@@ -1,4 +1,4 @@
-FROM ruby:2-slim
+FROM ruby:2
 
 LABEL "name"="Cowsays Action"
 LABEL "version"="1.0.0"
@@ -8,13 +8,8 @@ LABEL "com.github.actions.color"="blue"
 LABEL "com.github.actions.name"="Cowsays"
 LABEL "com.github.actions.description"="Say things with a cow"
 
-ENV DOCKERVERSION=18.06.1-ce
+RUN gem install ruby_cowsay
 
-COPY Gemfile Gemfile.lock ./
+COPY cow.rb /bin/cowsay
 
-RUN bundle install --without=test
-
-COPY cow.rb /bin/cow
-
-ENTRYPOINT ["cow"]
-CMD ["hello world"]
+ENTRYPOINT ["cowsay"]
