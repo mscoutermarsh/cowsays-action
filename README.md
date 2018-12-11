@@ -3,7 +3,7 @@ Cowsays for GitHub Actions. This Action wraps the [ruby_cowsay](https://github.c
 
 ```
  _____________ 
-< Ship it!!!!! >
+< Ship it!!!!!! >
  ------------- 
       \   ^__^
        \  (oo)\_______
