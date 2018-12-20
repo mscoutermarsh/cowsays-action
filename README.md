@@ -1,4 +1,4 @@
-# cowsays-action
+# 🐮 cowsays-action
 Cowsays for GitHub Actions. This Action wraps the [ruby_cowsay](https://github.com/PatrickTulskie/ruby_cowsay) gem.
 
 ```
@@ -13,9 +13,9 @@ Cowsays for GitHub Actions. This Action wraps the [ruby_cowsay](https://github.c
 
 ```
 
-## Usage
+## 🐄 Usage
 
-```
+```hcl
 workflow "Deploy Master" {
   on = "push"
   resolves = ["cow"]
