@@ -17,7 +17,7 @@ Cowsays for the latest version of GitHub Actions. This Action wraps the [ruby_co
 
 ```yml
 on:
-  push:
+  push
 
 name: Cowsays
 
