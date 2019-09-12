@@ -1,5 +1,5 @@
 # 🐮 cowsays-action
-Cowsays for GitHub Actions. This Action wraps the [ruby_cowsay](https://github.com/PatrickTulskie/ruby_cowsay) gem.
+Cowsays for the latest version of GitHub Actions. This Action wraps the [ruby_cowsay](https://github.com/PatrickTulskie/ruby_cowsay) gem.
 
 ```
  _____________ 
@@ -15,14 +15,19 @@ Cowsays for GitHub Actions. This Action wraps the [ruby_cowsay](https://github.c
 
 ## 🐄 Usage
 
-```hcl
-workflow "Deploy Master" {
-  on = "push"
-  resolves = ["cow"]
-}
+```yml
+on:
+  push
 
-action "cow" {
-  uses = "mscoutermarsh/cowsays-action@master"
-  args = "Ship it!!!!!"
-}
+name: Cowsays
+
+jobs:
+  cow:
+    name: Cowsays
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ship it
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: ship ship ship!
 ```

@@ -1,0 +1,15 @@
+name: 'Cowsays'
+description: 'Say things with a cow'
+author: 'Mike Coutermarsh'
+inputs: 
+  text:
+    description: 'What does the cow say?'
+    default: 'Ship it!!!!!'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.text }}
+branding:
+  color: blue
+  icon: message-circle
