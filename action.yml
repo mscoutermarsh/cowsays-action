@@ -5,6 +5,9 @@ inputs:
   text:
     description: 'What does the cow say?'
     default: 'Ship it!!!!!'
+  color:
+    description: 'Color of your cow'
+    default: 'white'
 runs:
   using: 'node12'
   main: 'dist/index.js'
