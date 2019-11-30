@@ -10,4 +10,4 @@ jobs:
     - uses: ./
       with:
         text: "I am cow"
-        color: "rainbow"
+        color: "red"

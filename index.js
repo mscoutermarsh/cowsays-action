@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const cowsay = require("cowsay");
-const colors = require("colors");
+const chalk = require("chalk");
 
 async function run() {
   const text = core.getInput('text');
@@ -12,11 +12,7 @@ async function run() {
 
   console.log(color)
 
-  colors.setTheme({
-    silly: color,
-  });
-
-  console.log(colors.silly(cowsay.say({ text : text })));
+  console.log(chalk.keyword(color)(cowsay.say({ text : text })));
 }
 
 run()
