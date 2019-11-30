@@ -172,9 +172,7 @@ async function run() {
     color = colors["white"]
   }
 
-  console.log(color)
-
-  console.log(ctx.ansi(color)(cowsay.say({ text : text })));
+  console.log(ctx.ansi256(color)(cowsay.say({ text : text })));
 }
 
 run()
