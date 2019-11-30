@@ -1,5 +1,5 @@
 # 🐮 cowsays-action
-Cowsays for the latest version of GitHub Actions. This Action wraps the [ruby_cowsay](https://github.com/PatrickTulskie/ruby_cowsay) gem.
+Cowsays for Actions. Say things in your logs like a Cow.
 
 ```
  _____________ 
@@ -29,5 +29,18 @@ jobs:
     - name: Ship it
       uses: mscoutermarsh/cowsays-action@master
       with:
-        text: ship ship ship!
+        text: 'ship ship ship!'
+        color: 'red'
 ```
+
+## Colors
+
+- black
+- red
+- green
+- yellow
+- blue
+- magenta
+- cyan
+- white
+- gray

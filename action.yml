@@ -1,15 +1,16 @@
 name: 'Cowsays'
 description: 'Say things with a cow'
 author: 'Mike Coutermarsh'
-inputs: 
+inputs:
   text:
     description: 'What does the cow say?'
     default: 'Ship it!!!!!'
+  color:
+    description: 'Color of your cow'
+    default: 'white'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.text }}
+  using: 'node12'
+  main: 'dist/index.js'
 branding:
   color: blue
   icon: message-circle
