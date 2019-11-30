@@ -14,6 +14,8 @@ async function run() {
     color = colors["white"]
   }
 
+  console.log(color)
+
   console.log(ctx.ansi(color)(cowsay.say({ text : text })));
 }
 
