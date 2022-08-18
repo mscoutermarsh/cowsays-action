@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mscoutermarsh/cowsays-action#readme",
   "dependencies": {
-    "@actions/core": "^1.1.1",
+    "@actions/core": "^1.9.1",
     "chalk": "^3.0.0",
     "cowsay": "^1.4.0"
   },
